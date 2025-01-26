@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    /* Add animations and transitions here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      transition: background-color 0.5s ease;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 15px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #4CAF50;
+    }
+
+    .hero {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    main {
+      padding: 50px 20px;
+    }
+
+    .content h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: slideIn 2s forwards;
+    }
+
+    .content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .content ul li {
+      font-size: 1.2em;
+      margin: 10px 0;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .content ul li:hover {
+      transform: scale(1.05);
+      color: #4CAF50;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      opacity: 0;
+      animation: fadeIn 3s 0.5s forwards;
+    }
+
+    footer .social-icons {
+      margin-top: 15px;
+    }
+
+    footer .social-icons a {
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    footer .social-icons a:hover {
+      transform: scale(1.2);
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="ai-assistant.html">AI Assistant</a>
+      <a href="web-platform.html">Web Platform</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Mobile App</h1>
+    <p>An intuitive mobile app to solve real-world problems.</p>
+  </section>
+
+  <main>
+    <section class="content">
+      <h2>About the Mobile App</h2>
+      <p>Our mobile app is designed to help users solve real-world problems by providing easy-to-use solutions right at their fingertips.</p>
+      <ul>
+        <li>User-friendly interface</li>
+        <li>Real-time data synchronization</li>
+        <li>Customizable features to meet individual needs</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hackeye | <a href="../privacy-policy.html">Privacy Policy</a> | <a href="../terms-of-service.html">Terms of Service</a></p>
+    <div class="social-icons">
+      <a href="#"><img src="../images/facebook-icon.png" alt="Facebook Icon"></a>
+      <a href="#"><img src="../images/twitter-icon.png" alt="Twitter Icon"></a>
+      <a href="#"><img src="../images/instagram-icon.png" alt="Instagram Icon"></a>
+      <a href="#"><img src="../images/linkedin-icon.png" alt="LinkedIn Icon"></a>
+    </div>
+  </footer>
+</body>
+</html>

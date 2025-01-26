@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackeye - Coding Redefined</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background: #f8f8f8;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+    header nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+    }
+    header nav a:hover {
+      color: #007BFF;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #007BFF;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    
+    .cards {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-top: 1rem;
+    }
+    .card {
+      background: linear-gradient(to bottom right, #f0f0f0, #ddd);
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .form-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .form {
+      max-width: 400px;
+      width: 100%;
+    }
+    .form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    .form input, .form textarea, .form button {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .form button {
+      background: #007BFF;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .form button:hover {
+      background: #0056b3;
+    }
+    footer {
+      background: #f8f8f8;
+      padding: 1rem;
+      text-align: center;
+      border-top: 1px solid #ddd;
+    }
+    footer .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    footer .social-icons a {
+      text-decoration: none;
+      color: #007BFF;
+      transition: color 0.3s;
+    }
+    footer .social-icons a:hover {
+      color: #0056b3;
+    }
+    footer .social-icons img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s;
+    }
+    footer .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-50%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero, .section-title {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong>Hackeye</strong></div>
+  <nav>
+    <a href="#">Products</a>
+    <a href="#">Solutions</a>
+    <a href="#">Community</a>
+    <a href="#">Resources</a>
+    <a href="#">Pricing</a>
+    <a href="#">Contact</a>
+    <a href="#">Sign In</a>
+    <a href="#">Register</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Hackeye</h1>
+  <p>Welcome To Hackeye - Where Code Is About Understanding and Innovation</p>
+</div>
+
+<main>
+  <section>
+    <h2 class="section-title">What We Do Here...</h2>
+    <div class="cards">
+      <a href="pages/code-together.html" class="card">
+        <img src="images\coding-session.jpg" alt="Coding Together Session">
+        <h3>Code Together</h3>
+        <p>Join collaborative coding sessions to learn and grow together.</p>
+      </a>
+      <a href="pages/hackathons.html" class="card">
+        <img src="images/hackathon.jpg" alt="Hackathon Event">
+        <h3>Hackathons</h3>
+        <p>Participate in challenging hackathons to showcase your skills.</p>
+      </a>
+      <a href="pages/workshops.html" class="card">
+        <img src="images/workshops.jpg" alt="Workshops">
+        <h3>Workshops</h3>
+        <p>Engage in expert-led workshops to expand your knowledge.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Our Latest Works</h2>
+    <div class="cards">
+      <a href="pages/ai-assistant.html" class="card">
+        <img src="images/project1.jpg" alt="AI Assistant Project">
+        <h3>AI Assistant</h3>
+        <p>An AI-powered assistant developed by our team.</p>
+      </a>
+      <a href="pages/web-platform.html" class="card">
+        <img src="images/project2.jpg" alt="Web Platform Project">
+        <h3>Web Platform</h3>
+        <p>A responsive web platform designed for seamless user experience.</p>
+      </a>
+      <a href="pages/mobile-app.html" class="card">
+        <img src="images/project3.jpg" alt="Mobile App Project">
+        <h3>Mobile App</h3>
+        <p>An intuitive mobile app to solve real-world problems.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Why Wait? Join Us Now</h2>
+    <div class="form-section">
+      <div class="cards">
+        <a href="pages/expert-guidance.html" class="card">
+          <img src="images/advantage1.jpg" alt="Expert Guidance">
+          <h3>Expert Guidance</h3>
+          <p>Learn from experienced mentors.</p>
+        </a>
+        <a href="pages/networking.html" class="card">
+          <img src="images/advantage2.jpg" alt="Networking Opportunities">
+          <h3>Networking</h3>
+          <p>Connect with industry professionals.</p>
+        </a>
+        <a href="pages/resources.html" class="card">
+          <img src="images/advantage3.jpg" alt="Exclusive Resources">
+          <h3>Exclusive Resources</h3>
+          <p>Access exclusive coding materials and tools.</p>
+        </a>
+      </div>
+      <form class="form">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required>
+
+        <label for="surname">Surname</label>
+        <input id="surname" type="text" name="surname" placeholder="Enter your surname" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Hackeye | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/login" target="_blank" rel="noopener noreferrer">
+      <img src="images/facebook-icon.png" alt="Facebook Icon">
+    </a>
+    <a href="https://www.twitter.com/login" target="_blank" rel="noopener noreferrer">
+      <img src="images/twitter-icon.png" alt="Twitter Icon">
+    </a>
+    <a href="https://www.instagram.com/accounts/login" target="_blank" rel="noopener noreferrer">
+      <img src="images/instagram-icon.png" alt="Instagram Icon">
+    </a>
+    <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer">
+      <img src="images/linkedin-icon.png" alt="LinkedIn Icon">
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
